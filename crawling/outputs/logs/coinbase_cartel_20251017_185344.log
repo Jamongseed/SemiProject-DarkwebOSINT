@@ -1,0 +1,22 @@
+2025-10-17 18:53:44 [coinbase_cartel][OUT] --- Coinbase Cartel Crawler ---
+2025-10-17 18:53:44 [coinbase_cartel][OUT] Tor 프록시(포트: 9050)로 접속 시도 → http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion
+2025-10-17 18:53:49 [coinbase_cartel][OUT] --- 접속 성공 ---
+2025-10-17 18:53:49 [coinbase_cartel][OUT] --- Response Preview ---
+2025-10-17 18:53:49 [coinbase_cartel][OUT] <!DOCTYPE html>
+2025-10-17 18:53:49 [coinbase_cartel][OUT] <html lang="en">
+2025-10-17 18:53:49 [coinbase_cartel][OUT] <head>
+2025-10-17 18:53:49 [coinbase_cartel][OUT]   <meta charset="UTF-8">
+2025-10-17 18:53:49 [coinbase_cartel][OUT]   <title>System Breach • Coinbase Cartel</title>
+2025-10-17 18:53:49 [coinbase_cartel][OUT]   <meta name="viewport" content="width=device-width,initial-scale=1">
+2025-10-17 18:53:49 [coinbase_cartel][OUT]   <meta http-equiv="X-Content-Type-Options" content="nosniff">
+2025-10-17 18:53:49 [coinbase_cartel][OUT]   <meta name="robots" content="noindex">
+2025-10-17 18:53:49 [coinbase_cartel][OUT]   <meta http
+2025-10-17 18:53:49 [coinbase_cartel][OUT] 
+2025-10-17 18:53:49 [coinbase_cartel][OUT] 총 16개 항목 파싱
+2025-10-17 18:53:49 [coinbase_cartel][OUT] [[Name: Canias ERP, industry: ERP, revenue: $26.7 Million, website: caniaserp.com, details_link: http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/canias],
+2025-10-17 18:53:49 [coinbase_cartel][OUT]  [Name: Ceva Logistics, industry: Logistics, revenue: $20.2 Billion, website: cevalogistics.com, details_link: http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/ceva],
+2025-10-17 18:53:49 [coinbase_cartel][OUT]  [Name: ChampionX, industry: Industrial Machinery & Equipment, revenue: $3.6 Billion, website: championx.com, details_link: http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/championx],
+2025-10-17 18:53:49 [coinbase_cartel][OUT]  [Name: Schedler-translog, industry: Logistics, revenue: $30 Million, website: schedler-translog.de, details_link: http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/schedler],
+2025-10-17 18:53:49 [coinbase_cartel][OUT]  [Name: PLC-Transportation, industry: Transportation, revenue: $30.7 Million, website: plc-trans.com, details_link: http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/plc-trans]]
+2025-10-17 18:53:49 [coinbase_cartel][OUT] 
+2025-10-17 18:53:49 [coinbase_cartel][OUT] CSV 저장 완료 (덮어쓰기): /home/jamong/Desktop/goorm/project1/crawling/outputs/coinbase_cartel_unified.csv

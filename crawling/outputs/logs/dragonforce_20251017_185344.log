@@ -1,0 +1,110 @@
+2025-10-17 18:53:44 [dragonforce][OUT] ### TimeZone 에러 발생시 pip install tzdata 실행 (Ubuntu 일반적으로 기본 제공)
+2025-10-17 18:53:44 [dragonforce][OUT] ⏳ Page 1 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=1)
+2025-10-17 18:53:52 [dragonforce][OUT] Page 1: 데이터 로드 성공
+2025-10-17 18:53:52 [dragonforce][OUT] 총 11개의 페이지를 발견했습니다. 순차적으로 크롤링을 시작합니다.
+2025-10-17 18:53:52 [dragonforce][OUT] 
+2025-10-17 18:53:52 [dragonforce][OUT] ⏳ Page 2 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=2)
+2025-10-17 18:53:54 [dragonforce][OUT] Page 2: 데이터 로드 성공
+2025-10-17 18:53:54 [dragonforce][OUT] ⏳ Page 3 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=3)
+2025-10-17 18:53:57 [dragonforce][OUT] Page 3: 데이터 로드 성공
+2025-10-17 18:53:57 [dragonforce][OUT] ⏳ Page 4 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=4)
+2025-10-17 18:53:59 [dragonforce][OUT] Page 4: 데이터 로드 성공
+2025-10-17 18:53:59 [dragonforce][OUT] ⏳ Page 5 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=5)
+2025-10-17 18:54:02 [dragonforce][OUT] Page 5: 데이터 로드 성공
+2025-10-17 18:54:02 [dragonforce][OUT] ⏳ Page 6 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=6)
+2025-10-17 18:54:04 [dragonforce][OUT] Page 6: 데이터 로드 성공
+2025-10-17 18:54:04 [dragonforce][OUT] ⏳ Page 7 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=7)
+2025-10-17 18:54:07 [dragonforce][OUT] Page 7: 데이터 로드 성공
+2025-10-17 18:54:07 [dragonforce][OUT] ⏳ Page 8 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=8)
+2025-10-17 18:54:09 [dragonforce][OUT] Page 8: 데이터 로드 성공
+2025-10-17 18:54:09 [dragonforce][OUT] ⏳ Page 9 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=9)
+2025-10-17 18:54:12 [dragonforce][OUT] Page 9: 데이터 로드 성공
+2025-10-17 18:54:12 [dragonforce][OUT] ⏳ Page 10 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=10)
+2025-10-17 18:54:14 [dragonforce][OUT] Page 10: 데이터 로드 성공
+2025-10-17 18:54:14 [dragonforce][OUT] ⏳ Page 11 데이터 요청 시도 (URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=11)
+2025-10-17 18:54:17 [dragonforce][OUT] Page 11: 데이터 로드 성공
+2025-10-17 18:54:17 [dragonforce][OUT] ### 데이터 처리 완료! 총 **213** 개의 피해 기업 정보를 리스트에 저장했습니다.
+2025-10-17 18:54:17 [dragonforce][OUT] ### 수집된 데이터 샘플 (최신 5개)
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (KST): 2025-10-17 18:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (UTC): 2025-10-17 09:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Page Number: 1
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Company Name: gardiners solicitors
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Website: gardinerssolicitors.co.uk
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Address: 19-21 North End Road West Kensington London W14 8ST  Tel: 020 7603 7245 Fax: 020 7603 3302  Kensington High Street DX47208
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Data Size: 87.40 GB
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Description: We are a small firm of solicitors based in West Kensington, close to Olympia, established in 1997 by...
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Is Published: No
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Time Until Publication: 5d 22h 36m left
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Publication URL: 
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Posted Time (UTC): 2025-10-17 08:51:45
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Details URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/post?post_uuid=8f5eda55-f760-495a-a07d-e03fa96f413a
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT] 
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (KST): 2025-10-17 18:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (UTC): 2025-10-17 09:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Page Number: 1
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Company Name: José Guma S.A.
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Website: joseguma.com
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Address: adre Marcos Perdia 579, Colonia Caroya, Córdoba, Argentina +54 9 3525 420659
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Data Size: 75.44 GB
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Description: José Guma S.A.
+2025-10-17 18:54:17 [dragonforce][OUT] 
+2025-10-17 18:54:17 [dragonforce][OUT] Occupation: production of household chemicals and hygiene products (soap, cleaning p...
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Is Published: No
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Time Until Publication: 1d 6h 55m left
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Publication URL: 
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Posted Time (UTC): 2025-10-16 17:06:04
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Details URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/post?post_uuid=078e25d3-95e7-492f-8303-c9628c2a5592
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT] 
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (KST): 2025-10-17 18:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (UTC): 2025-10-17 09:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Page Number: 1
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Company Name: The Law Offices of Michael C George
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Website: www.lawofficemcg.com
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Address: 3001 Broadway, West Palm Beach, Florida, 33407, United States
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Data Size: 442.61 GB
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Description: The Law Office of Michael C. George, P.A. specializes in personal injury and criminal law, providing...
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Is Published: No
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Time Until Publication: 3d 0h 29m left
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Publication URL: 
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Posted Time (UTC): 2025-10-14 13:26:06
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Details URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/post?post_uuid=1eb43fe2-e402-4efe-81d7-be5394b66059
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT] 
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (KST): 2025-10-17 18:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (UTC): 2025-10-17 09:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Page Number: 1
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Company Name: Autorotor
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Website: www.autorotorgroup.com
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Address: Via Dell'industria 4, Vaiano Cremasco, Lombardy, 26010, Italy
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Data Size: 124.64 GB
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Description: Autorotor builds custom machinery for factories and manufacturing plants. They make rotating tables,...
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Is Published: No
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Time Until Publication: 3d 7h 10m left
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Publication URL: 
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Posted Time (UTC): 2025-10-14 13:15:23
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Details URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/post?post_uuid=49aae3cb-88b4-4610-a673-a32df94352b6
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT] 
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (KST): 2025-10-17 18:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Current Time (UTC): 2025-10-17 09:53:52
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Page Number: 1
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Company Name: Fountains Condominium Operations
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Website: www.fcocondo.com
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Address: 4615 Fountains Dr Ste B, Lake Worth, Florida, 33467, United States
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Data Size: 453.66 GB
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Description: Fountains Condominium Operations Inc. is an in-house management company dedicated to ensuring the be...
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Is Published: No
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Time Until Publication: 3d 5h 43m left
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Publication URL: 
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Posted Time (UTC): 2025-10-13 18:23:39
+2025-10-17 18:54:17 [dragonforce][OUT]   [+] Details URL: http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/post?post_uuid=efaf7c86-bf78-47c4-915b-d2436ee81713
+2025-10-17 18:54:17 [dragonforce][OUT] --------------------------------------------------
+2025-10-17 18:54:17 [dragonforce][OUT] 
+2025-10-17 18:54:17 [dragonforce][OUT]  - 통합(덮어쓰기): /home/jamong/Desktop/goorm/project1/crawling/outputs/dragonforce_unified.csv

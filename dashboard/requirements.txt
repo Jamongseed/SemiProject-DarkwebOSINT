@@ -1,0 +1,5 @@
+# dashboard/requirements.txt
+streamlit==1.37.1
+elasticsearch==8.15.1
+pandas==2.2.2
+python-dotenv==1.0.1
