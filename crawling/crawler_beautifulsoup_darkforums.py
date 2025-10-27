@@ -9,7 +9,7 @@ import json
 import dataclasses
 from pathlib import Path
 from zoneinfo import ZoneInfo
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 from typing import Set, List, Dict, Any, Tuple, Optional
@@ -114,13 +114,13 @@ TARGET_FORUMS = {
 
 # # 테스트용
 # TARGET_FORUMS = {
-#     # 페이지 태그 선택 테스트
+#     # 페이지 태그 선택 테스트 예시 : 페이지 넘버 없음
 #      # 1페이지
 #     "Cracking Tutorials": "Forum-Cracking-Tutorials",
-#     # 페이지 생략 없는 다수 페이지
+#     # 페이지 생략 없는 다수 페이지 예시 : 1 2 3 4
 #      # 404 테스트
 #     "Tutorials": "Forum-Tutorials",
-#     # 페이지 생략 있는 다수 페이지
+#     # 페이지 생략 있는 다수 페이지 예시 : 1 2 ... 7
 #     "Databases": "Forum-Databases",
 # }
 
@@ -147,7 +147,7 @@ UNIFIED_HEADERS = [
 class CriticalCrawlStop(Exception):
     """크롤링을 즉시 중지하고 상태를 저장해야 할 때 발생하는 예외"""
     pass
-# ----------------------------------------------------
+
 
 @dataclasses.dataclass
 class PageCrawlResult:
@@ -205,17 +205,52 @@ def save_to_csv(data_list: List[Dict[str, Any]], out_dir: str = OUTPUT_DIR, file
     except Exception as e:
         logging.error(f"CSV 파일 저장 중 오류 발생: {e}")
 
-def convert_to_iso_utc(date_str: str) -> str:
-    if not date_str or date_str == "N/A":
-        return ""
-    date_str = re.sub(r'^\(This post was last modified: (.+?) by .*\)$', r'\1', date_str)
-    date_str = date_str.split('by')[0].strip()
+    
+def convert_to_iso_utc(input_str: str) -> str:
+    now = datetime.now(timezone.utc)
+
+    clean_str = input_str.strip()
+
     try:
-        dt_naive = datetime.strptime(date_str, "%d-%m-%y, %I:%M %p")
-        dt_aware_utc = dt_naive.replace(tzinfo=timezone.utc)
-        return dt_aware_utc.isoformat(timespec='microseconds')
-    except ValueError:
+        # "7 hours ago" (UTC 기준 7시간 전)
+        match_hours = re.search(r'(\d+)\s+hour(s?)\s+ago', clean_str, re.IGNORECASE)
+        if match_hours:
+            hours_ago = int(match_hours.group(1))
+            utc_dt = now - timedelta(hours=hours_ago)
+            return utc_dt.isoformat()
+
+        # "Yesterday, 02:50 PM" (UTC 기준 어제)
+        if clean_str.startswith("Yesterday") or clean_str.startswith("Today"):
+            day_part, time_part = clean_str.split(',', 1)
+            time_part = time_part.strip()
+            
+            parsed_time = datetime.strptime(time_part, "%I:%M %p").time()
+            
+            if day_part == "Yesterday":
+                target_date = (now - timedelta(days=1)).date()
+            else:
+                target_date = now.date()
+                
+            naive_dt = datetime.combine(target_date, parsed_time)
+
+            utc_dt = naive_dt.replace(tzinfo=timezone.utc)
+            return utc_dt.isoformat()
+
+        # "16-05-25, 02:12 PM" (UTC 시간)
+        match_absolute = re.search(r'(\d{2}-\d{2}-\d{2},\s+\d{2}:\d{2}\s+[AP]M)', clean_str)
+        if match_absolute:
+            date_str = match_absolute.group(1)
+            
+            naive_dt = datetime.strptime(date_str, "%d-%m-%y, %I:%M %p")
+            
+            utc_dt = naive_dt.replace(tzinfo=timezone.utc)
+            return utc_dt.isoformat()
+
         logging.warning(f"날짜 형식 변환 실패: '{date_str}'")
+        return ""
+
+    except Exception as e:
+        logging.warning(f"날짜 형식 변환 실패: '{date_str}' {e}")
         return ""
 
 # --- 이어하기 (Resume) 기능 함수 (Receiver인 Crawler가 사용) ---
@@ -371,7 +406,7 @@ class Crawler:
         return page_data, error_count, http_error_count
     
     def _get_last_page_number(self, soup: BeautifulSoup) -> int:
-        """(private) 게시판 목록 수프로부터 마지막 페이지 번호를 추출합니다."""
+        """(private) 게시판 목록으로부터 마지막 페이지 번호를 추출합니다."""
         page_tag = soup.select_one("div.pagination")
         if not page_tag:
             logging.info("  페이지네이션 태그를 찾을 수 없음 (1페이지가 마지막).")
